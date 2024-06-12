@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">AyudAR</string>
+    <string name="send">Enviar</string>
+    <string name="imagedescr">imagenfacultad</string>
+    <string name="grupoRiesgo">Mayores de 60 años
+
+Información para la población mayor a 60 años
+
+Mantener una adecuada higiene de manos a través de lavado con agua y jabón o utilización de soluciones a base de alcohol (por ejemplo, alcohol en gel).
+
+Cubrirse la nariz y la boca con el pliegue interno del codo o usar un pañuelo descartable al toser o estornudar. Usar el cesto de basura más cercano para desechar los pañuelos utilizados. Limpiar las manos después de toser o estornudar.
+
+No llevarse las manos a los ojos, la nariz o la boca.
+
+Desinfectar las superficies y los objetos que se usan frecuentemente utilizando 1 parte de lavandina por 9 de agua.
+
+Evitar saludos con besos, abrazos o dando la mano y minimizar actividades sociales sobre todo en lugares cerrados y masivos o con acumulación de gente.
+
+No compartir el mate, la vajilla y los utensilios, e intensificar el lavado de manos.
+
+Ventilar los ambientes con regularidad para permitir el recambio de aire.
+
+Ante cualquier síntoma (fiebre y tos, dolor de garganta o dificultad para respirar) deben comunicarse con el seguro médico o las líneas de atención que disponen los diferentes ministerios: Atención Telefónica 24 hs – Gobierno en Línea 148.
+
+Recibir la vacuna antigripal y el esquema secuencial contra el neumococo según recomendaciones nacionales.
+
+Postergar viajes a áreas de transmisión de coronavirus.
+
+Para residentes en instituciones para personas mayores, evitar las visitas de personas con síntomas respiratorios y de quienes hayan estado en lugares de transmisión viral en los últimos 14 días.
+
+
+Pacientes oncológicos
+
+La OMS, el MSN y las Sociedades Científicas del Cáncer; AAOC, SADI, ASCO, ACS y SEI coinciden en las recomendaciones detalladas a continuación:
+
+
+¿Las personas con cáncer deberían tomar precauciones especiales?
+
+
+Deben seguir las mismas reglas que las personas que no tienen cáncer
+
+Recomendaciones
+
+
+La manera más importante de protegerse es evitar exponerse al COVID-19. Siga las pautas sobre las restricciones de viajes emitidas por las agencias gubernamentales de su jurisdicción.
+
+Otra manera fundamental de protegerse es lavarse las manos a menudo con agua y jabón durante al menos 40 segundos. Si no tiene agua y jabón, use un desinfectante para manos que contenga al menos 60% de alcohol.
+
+Sin embargo, la mejor manera de lavarse las manos es con agua y jabón.
+
+Evite tocarse los ojos, la nariz y la boca.
+
+Si tiene que toser o estornudar, use un pañuelo desechable. Luego deseche el pañuelo. O, - tosa o estornude en el codo y no en la mano.
+
+Evite el contacto cercano con personas que están enfermas.
+
+Limpie con frecuencia los objetos y las superficies que toque con toallitas o aerosol de limpieza para el hogar. Estos objetos y superficies incluyen los picaportes de las puertas, los mostradores, los baños, los teclados, las tabletas, los teléfonos, entre otros.
+
+No se recomiendan las mascarillas como una manera de prevenir el COVID-19. Sin embargo, si usted tiene una enfermedad respiratoria, como influenza o COVID-19, usar una mascarilla podría impedir que la enfermedad se disemine a su alrededor.
+
+Evite las multitudes para reducir su exposición al contagio.
+
+Si tenés más de 65 años, te recomendamos recibir la vacuna para la gripe cada año para ayudar a reducir el riego de contraer influenza y continuar con el esquema secuencial contra el neumococo.
+
+Si está enfermo, quedarse en el hogar es la mejor manera de evitar la transmisión del nuevo coronavirus.
+
+
+Si cree que es posible que tenga este coronavirus:
+
+
+Comuníquese con su médico si tiene fiebre y otros síntomas de una enfermedad respiratoria, como tos y dificultad para respirar, especialmente si: Estuvo en contacto cercano con una persona que se sabe que tiene COVID-19, vive en o recientemente viajó a un área que se sabe que tiene un brote de la enfermedad. Llame antes de visitar a su profesional de atención médica o al departamento de emergencias
+
+Pacientes transplantados
+
+
+El SARS-Cov-2 es un coronavirus que se transmite por vía aérea a través de las gotas de saliva que se emiten al hablar, toser o estornudar, que sirven de transporte para los microorganismos que se encuentran en las vías respiratorias, pero también al estrechar la mano de una persona enferma o tocar una superficie contaminada. Dicho coronavirus ocasiona una infección respiratoria denominada COVID-19.
+
+Como ocurre con otras infecciones virales respiratorias como la gripe, es posible que los pacientes inmunodeprimidos, o con enfermedades crónicas debilitantes o de edad avanzada, se enfrenten a un riesgo mayor de infecciones (y, eventualmente, complicaciones) que el resto de la población.
+
+Los pacientes inmunodeprimidos deben ser especialmente cuidadosos y tomar las medidas de prevención necesarias para cuidar su salud.
+
+Recomendaciones para Pacientes Trasplantados, en Lista de Espera y/o Diálisis
+Lavarse las manos frecuentemente con agua y jabón. Si no dispone de agua y jabón, puede usar algún tipo de desinfectante.
+
+Limpiar y desinfectar con frecuencia las superficies y los objetos que se usan.
+
+Ventilar a diario todos los ambientes.
+
+Evitar salir de la casa para asistir a reuniones sociales.
+
+Al toser o estornudar, utilizar pañuelos descartables para cubrirse nariz y boca. Los pañuelos usados deben ser tirados a la basura. Si no dispone de pañuelos, cúbrase con el pliegue del codo y luego lávese las manos.
+
+Evitar tocarse la cara.
+
+Evitar compartir el mate. No compartir platos, vasos, cubiertos, toallas y almohadas.
+
+Evitar el contacto cercano con personas que tengan enfermedades respiratorias.
+
+No se recomienda el uso de barbijos.
+
+No concurrir a lugares de concentración de personas.</string>
+    <string name="bottom_nav_inicio">Inicio</string>
+    <string name="bottom_nav_riesgo">Grupo de Riesgo</string>
+    <string name="bottom_nav_info">Info. Paciente</string>
+    <string name="bottom_nav_carga">Carga de datos</string>
+
+</resources>

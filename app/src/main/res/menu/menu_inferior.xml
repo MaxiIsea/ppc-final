@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_inicio"
+        android:icon="@drawable/nav_inicio"
+        android:title="@string/bottom_nav_inicio" />
+    <item
+        android:id="@+id/page_riesgo"
+        android:icon="@drawable/nav_riesgo"
+        android:title="@string/bottom_nav_riesgo" />
+    <item
+        android:id="@+id/page_info"
+        android:icon="@drawable/nav_info"
+        android:title="@string/bottom_nav_info" />
+    <item
+        android:id="@+id/page_carga"
+        android:icon="@drawable/nav_carga"
+        android:title="@string/bottom_nav_carga" />
+</menu>
