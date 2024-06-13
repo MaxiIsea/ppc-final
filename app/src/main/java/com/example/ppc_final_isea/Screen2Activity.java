@@ -8,6 +8,7 @@ import android.net.NetworkCapabilities;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,12 +30,57 @@ public class Screen2Activity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
     private TextView textView2;
     private RequestQueue queue;
+    ImageView image_covid;
 
     @Override
+    /*protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_screen2);
+
+        image_covid = findViewById(R.id.imageCovid2);
+        textView2 = (TextView) findViewById(R.id.textView2);
+        iniciarMenuInf();
+
+        // Instantiate the RequestQueue.
+        queue = Volley.newRequestQueue(this);
+        String url = "https://ppc2021.edit.com.ar/service/api/info";
+
+        if (checkOnlineState() == true) {
+            // Request a JSON response from the provided URL.
+            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null,
+                    new Response.Listener<JSONObject>() {
+                        @Override
+                        public void onResponse(JSONObject response) {
+                            try {
+                                String texto = response.getString("result");
+                                textView2.setText(texto);
+                            } catch (JSONException e) {
+                                textView2.setText("La respuesta JSON no se pudo procesar");
+                                e.printStackTrace();
+                            }
+                        }
+                    }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    image_covid.setImageResource(R.drawable.error);
+                    Toast.makeText(Screen2Activity.this, "Error en respuesta: " + url + " -->" + error.getMessage(), Toast.LENGTH_LONG).show();
+                    error.printStackTrace();
+                }
+            });
+
+            // Add the request to the RequestQueue.
+            queue.add(jsonObjectRequest);
+        } else {
+            textView2.setText("No hay conexión a internet.");
+        }
+
+    }*/
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen2);
 
+        image_covid = findViewById(R.id.imageCovid2);
         textView2 = (TextView) findViewById(R.id.textView2);
         iniciarMenuInf();
 
@@ -64,7 +110,9 @@ public class Screen2Activity extends AppCompatActivity {
                     }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    textView2.setText("Error en respuesta: " + url + " -->" + error.getMessage());
+                    image_covid.setImageResource(R.drawable.error);
+                    Toast.makeText(Screen2Activity.this, "Error en respuesta: " + url + " -->" + error.getMessage(), Toast.LENGTH_LONG).show();
+                    error.printStackTrace();
                 }
             });
 
@@ -74,8 +122,6 @@ public class Screen2Activity extends AppCompatActivity {
             textView2.setText("No hay conexión a internet.");
         }
     }
-
-
 
     private void iniciarMenuInf() {
         bottomNavigationView = findViewById(R.id.bottom_navigation);

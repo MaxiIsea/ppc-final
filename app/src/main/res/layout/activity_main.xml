@@ -18,34 +18,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/Lighter_Grey">
+        android:background="@color/backgroundColor">
 
         <Button
             android:id="@+id/button_gRiesgo"
             android:layout_width="match_parent"
             android:layout_height="75dp"
-            android:backgroundTint="@color/Lightest_Blue"
+            android:backgroundTint="@color/primaryColor"
             android:onClick="goScreen2"
             android:text="Grupo de Riesgo"
-            android:textColor="@color/white" />
+            android:textColor="@color/textPrimaryColor" />
 
         <Button
             android:id="@+id/button_infoPacientes"
             android:layout_width="match_parent"
             android:layout_height="75dp"
-            android:backgroundTint="@color/Lightest_Blue"
+            android:backgroundTint="@color/primaryColor"
             android:onClick="goScreen3"
             android:text="Información para pacientes"
-            android:textColor="@color/white" />
+            android:textColor="@color/textPrimaryColor" />
 
         <Button
             android:id="@+id/button_cargaDatos"
             android:layout_width="match_parent"
             android:layout_height="75dp"
-            android:backgroundTint="@color/Lightest_Blue"
+            android:backgroundTint="@color/primaryColor"
             android:onClick="goScreen4"
             android:text="Carga de Datos"
-            android:textColor="@color/white" />
+            android:textColor="@color/textPrimaryColor" />
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Lighter_Grey"
+    android:background="@color/backgroundColor"
     tools:context=".Screen5Activity">
 
     <ImageView
@@ -15,55 +15,18 @@
         app:layout_constraintBottom_toTopOf="@+id/buttonSend"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cargando" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/buttonSend"
         android:layout_width="264dp"
         android:layout_height="54dp"
         android:layout_margin="10dp"
-        android:backgroundTint="@color/Lightest_Blue"
+        android:backgroundTint="@color/primaryColor"
         android:text="@string/send"
-        android:textColor="@color/white"
+        android:textColor="@color/textPrimaryColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <!--<ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/imageCovid"
-                android:layout_width="match_parent"
-                android:layout_height="450dp"
-                android:layout_marginHorizontal="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/covid" />
-
-            <Button
-                android:id="@+id/buttonSend"
-                android:layout_width="264dp"
-                android:layout_height="54dp"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="@color/Lightest_Blue"
-                android:text="@string/send"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageCovid" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </ScrollView>
-    -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

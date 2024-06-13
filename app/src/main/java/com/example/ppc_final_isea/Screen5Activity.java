@@ -33,17 +33,29 @@ import org.json.JSONObject;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Screen5Activity extends AppCompatActivity {
 
     ImageView image_covid;
     Button button_send;
     RequestQueue queue;
+    private Map<Double, String> covidImages;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen5);
+
+        covidImages = new HashMap<>();
+        covidImages.put(1.0, "http://10.0.2.2:1337/uploads/1_4_true_26790625a1.jpg");
+        covidImages.put(2.0, "http://10.0.2.2:1337/uploads/2_9_true_32bb8a4a26.jpg");
+        covidImages.put(3.0, "http://10.0.2.2:1337/uploads/3_5_false_aa3c015b07.jpg");
+        covidImages.put(5.0, "http://10.0.2.2:1337/uploads/5_7_true_c5bb56ba1d.jpg");
+        covidImages.put(6.0, "http://10.0.2.2:1337/uploads/6_5_false_af334005f7.jpg");
+        covidImages.put(8.0, "http://10.0.2.2:1337/uploads/8_10_true_2c27e50f4a.png");
+        covidImages.put(10.0, "http://10.0.2.2:1337/uploads/10_3_true_8b19a27b83.jpg");
 
         //Para que aparezca el boton atras en la actionBar
         if (getSupportActionBar() != null) {
@@ -69,10 +81,13 @@ public class Screen5Activity extends AppCompatActivity {
 
     }
 
-    private void cargarImagen(double riesgoRecurrente, double riesgoProgreso, boolean esquema) {
+    private String getValueFromMap(Map<Double, String> map, double key, String defaultValue) {
+        return map.getOrDefault(key, defaultValue);
+    }
+
+    /*private void cargarImagen(double riesgoRecurrente, double riesgoProgreso, boolean esquema) {
         //Obtener la url de la imagen
-        //String url = "https://ppc2021.edit.com.ar/service/api/imagen/";
-        String url = "http://10.0.2.2:1337/api/images/";
+        String url = "https://ppc2021.edit.com.ar/service/api/imagen/";
         String uri = url + riesgoRecurrente + "/" + riesgoProgreso + "/" + esquema;
         Log.e("Uri para obtener url imagen: ", uri);
 
@@ -106,6 +121,44 @@ public class Screen5Activity extends AppCompatActivity {
             Toast.makeText(Screen5Activity.this, "No hay conexión a internet", Toast.LENGTH_LONG).show();
         }
 
+    }*/
+
+    private void cargarImagen(double riesgoRecurrente, double riesgoProgreso, boolean esquema) {
+        //Obtener la url de la imagen
+        //String url = "http://10.0.2.2:1337/api/images/";
+        //String uri2 = url + riesgoRecurrente + "/" + riesgoProgreso + "/" + esquema;
+        //Log.e("Uri para obtener url imagen: ", uri2);
+
+        String defaultValue = "http://10.0.2.2:1337/uploads/1_4_true_26790625a1.jpg";
+        String uri = getValueFromMap(covidImages, riesgoRecurrente, defaultValue);
+
+        Log.e("Uri para obtener url imagen: ", uri);
+
+        if (checkOnlineState()) {
+            // Use ImageRequest to fetch the image directly
+            ImageRequest imageRequest = new ImageRequest(uri,
+                    new Response.Listener<Bitmap>() {
+                        @Override
+                        public void onResponse(Bitmap response) {
+                            // Set the received bitmap to an ImageView
+                            image_covid.setImageBitmap(response);
+                        }
+                    }, 0, 0, null,
+                    new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            image_covid.setImageResource(R.drawable.error);
+                            Toast.makeText(Screen5Activity.this, "Error en respuesta: " + uri + " -->" + error.getMessage(), Toast.LENGTH_LONG).show();
+                            error.printStackTrace();
+                        }
+                    });
+
+            // Add the request to the RequestQueue.
+            queue.add(imageRequest);
+
+        } else {
+            Toast.makeText(Screen5Activity.this, "No hay conexión a internet", Toast.LENGTH_LONG).show();
+        }
     }
 
     private void setearImagen(String urlImagen) {

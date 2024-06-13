@@ -4,18 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Lighter_Grey"
+    android:background="@color/backgroundColor"
     tools:context=".Screen4Activity"
     android:focusableInTouchMode="true">
-
-    <!--<com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
-        style="@style/Theme.temaApp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />-->
 
     <ScrollView
         android:layout_width="match_parent"
@@ -38,7 +29,7 @@
                 android:layout_marginTop="20dp"
                 android:textSize="20dp"
                 android:text="Paciente"
-                android:textColor="@color/black" />
+                android:textColor="@color/textTerciaryColor" />
 
             <EditText
                 android:id="@+id/pacienteEditText"
@@ -47,7 +38,8 @@
                 android:layout_marginTop="10dp"
                 android:autoSizeTextType="uniform"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="@color/textTerciaryColor"/>
 
             <TextView
                 android:id="@+id/riesgoText"
@@ -56,7 +48,7 @@
                 android:layout_marginTop="20dp"
                 android:textSize="20dp"
                 android:text="Riesgo de Progreso"
-                android:textColor="@color/black" />
+                android:textColor="@color/textTerciaryColor" />
 
             <EditText
                 android:id="@+id/riesgoEditText"
@@ -65,7 +57,8 @@
                 android:layout_marginTop="10dp"
                 android:autoSizeTextType="uniform"
                 android:ems="10"
-                android:inputType="numberDecimal" />
+                android:inputType="numberDecimal"
+                android:textColor="@color/textTerciaryColor"/>
 
             <TextView
                 android:id="@+id/riesgoRecurrenteText"
@@ -74,7 +67,7 @@
                 android:layout_marginTop="20dp"
                 android:textSize="20dp"
                 android:text="Riesgo Recurrente"
-                android:textColor="@color/black" />
+                android:textColor="@color/textTerciaryColor" />
 
             <EditText
                 android:id="@+id/riesgoRecurrenteEditText"
@@ -83,7 +76,8 @@
                 android:layout_marginTop="10dp"
                 android:autoSizeTextType="uniform"
                 android:ems="10"
-                android:inputType="numberDecimal" />
+                android:inputType="numberDecimal"
+                android:textColor="@color/textTerciaryColor"/>
 
             <TextView
                 android:id="@+id/textView5"
@@ -93,7 +87,7 @@
                 android:layout_marginTop="20dp"
                 android:textSize="20dp"
                 android:text="Esquema"
-                android:textColor="@color/black" />
+                android:textColor="@color/textTerciaryColor" />
 
             <RadioGroup
                 android:id="@+id/radioGroup"
@@ -124,10 +118,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
                 android:layout_marginTop="24dp"
-                android:backgroundTint="@color/Lightest_Blue"
+                android:backgroundTint="@color/primaryColor"
                 android:onClick="calculateRisk"
                 android:text="Calcular"
-                android:textColor="@color/white" />
+                android:textColor="@color/textPrimaryColor" />
 
         </LinearLayout>
 

@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icono2_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.temaApp"
+        android:theme="@style/Theme.MyApp"
         tools:targetApi="33">
         <activity
             android:name="com.example.ppc_final_isea.Screen5Activity"
